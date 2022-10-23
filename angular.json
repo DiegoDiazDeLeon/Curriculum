@@ -25,7 +25,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Escribir.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,10 +94,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/main.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
