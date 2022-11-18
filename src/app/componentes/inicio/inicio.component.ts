@@ -5,7 +5,7 @@ import { Route } from '@angular/router';
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  styleUrls: ['./iniciostyle.scss']
 })
 export class InicioComponent implements OnInit {
 

@@ -3,3 +3,29 @@
     width: 640px;
     height: 480px;
 }
+
+.subtitulos{
+    margin-bottom: 0px;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+
+.spansub{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 43ch;
+    
+    animation: typing 6s steps(48), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+    
+@keyframes typing {
+        from { width: 0}
+}
+    
+@keyframes blink {
+    50% { border-color: transparent}
+}

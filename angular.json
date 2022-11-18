@@ -26,7 +26,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/Escribir.js"
+              "src/assets/Escribir.js",
+              "src/assets/Matrix.js"
             ]
           },
           "configurations": {
