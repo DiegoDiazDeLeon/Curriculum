@@ -5,6 +5,8 @@ import { ProyectosComponent } from 'src/app/componentes/proyectos/proyectos.comp
 
 const routes: Routes = [
   {path: 'Inicio',component:InicioComponent},
+  {path: '',component:InicioComponent},
+
   {path: 'Proyectos',component:ProyectosComponent},
 ];
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CargarScriptsService } from 'src/app/cargar-scripts.service';
-import { ProyectosService} from '../../../service/proyectos.service';
+import { ProyectosjsonService} from '../../../service/proyectosjson.service';
+import {  ProyectosService } from '../../../service/proyectos.service'
 
 @Component({
   selector: 'app-proyectos',
@@ -9,8 +9,9 @@ import { ProyectosService} from '../../../service/proyectos.service';
 })
 export class ProyectosComponent implements OnInit {
 
+  ListProye: any[]=[];
   ProductList:any[]=[];
-  constructor(private ProductsSvc:ProyectosService,) { 
+  constructor(private ProductsSvc:ProyectosjsonService,private ProyectosA:ProyectosService) { 
     this.ProductsSvc.getAll().subscribe((result:any)=>{
       this.ProductList=result;
       console.log(result)
@@ -18,5 +19,12 @@ export class ProyectosComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.MostrarTodosP();
+  }
+
+  MostrarTodosP(){
+    this.ProyectosA.getAllProyect().subscribe((result:any)  =>
+    this.ListProye=result);
+    console.log(this.ListProye+"hola");
   }
 }

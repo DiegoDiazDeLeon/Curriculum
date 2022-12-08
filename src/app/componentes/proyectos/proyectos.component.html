@@ -1,4 +1,5 @@
-<div style="margin-top: 45px;">
+<main class="container">
+<div style="margin-top: 65px;">
   <div class="card text-center">
     <div class="card-header">
       ROBOTICA
@@ -10,9 +11,9 @@
         <img src="../../../assets/imagenes/R1 (1).jpg" alt="">
         <img src="../../../assets/imagenes/R2.jpg" alt="">
         <img src="../../../assets/imagenes/R3.jpg" alt="">
-        <img src="../../../assets/imagenes/R4.jpg" alt="">
+        <!---<img src="../../../assets/imagenes/R4.jpg" alt="">-->
       </div>
-      <a href="#" class="btn btn-primary">VER MAS</a>
+      <!---<a href="#" class="btn btn-primary">VER MAS</a> --->
     </div>
     <div class="card-footer text-muted">
       Proyecto Terminado
@@ -20,6 +21,97 @@
   </div>
 </div>
 
+<div style="margin-top: 50px;">
+  <div class="card text-center">
+    <div class="card-header">
+      INGENIERIA DE SOFTWARE
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">EQUINOTERAPIA</h5>
+      <p class="card-text">Proyecto echo para una asociacion, el cual ayuda a llevar un control administrativo de citas</p>
+      <div class="gallery">
+        <img src="../../../assets/imagenes/R1 (1).jpg" alt="">
+        <img src="../../../assets/imagenes/R2.jpg" alt="">
+        <img src="../../../assets/imagenes/R3.jpg" alt="">
+        <!---<img src="../../../assets/imagenes/R4.jpg" alt="">-->
+      </div>
+      <!---<a href="#" class="btn btn-primary">VER MAS</a> --->
+    </div>
+    <div class="card-footer text-muted">
+      Proyecto Con beta terminada
+    </div>
+  </div>
+</div>
+
+
+<div style="margin-top: 50px;">
+  <div class="card text-center">
+    <div class="card-header">
+      DESARROLLO DE SOFTWARE
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">REDL</h5>
+      <p class="card-text">Prototipo de una red social la cual pueda competir contra Facebook y Whatsapp</p>
+      <div class="gallery">
+        <img src="../../../assets/imagenes/R1 (1).jpg" alt="">
+        <img src="../../../assets/imagenes/R2.jpg" alt="">
+        <img src="../../../assets/imagenes/R3.jpg" alt="">
+        <!---<img src="../../../assets/imagenes/R4.jpg" alt="">-->
+      </div>
+      <!---<a href="#" class="btn btn-primary">VER MAS</a> --->
+    </div>
+    <div class="card-footer text-muted">
+      Proyecto En Desarrollo
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 50px;">
+  <div class="card text-center">
+    <div class="card-header">
+      INTELIGENCIA ARTIFICIAL
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Detector de Objetos</h5>
+      <p class="card-text">Detector de Objetos desarrollado con python y yolo</p>
+      <div class="gallery">
+        <img src="../../../assets/imagenes/R1 (1).jpg" alt="">
+        <img src="../../../assets/imagenes/R2.jpg" alt="">
+        <img src="../../../assets/imagenes/R3.jpg" alt="">
+        <!---<img src="../../../assets/imagenes/R4.jpg" alt="">-->
+      </div>
+      <!---<a href="#" class="btn btn-primary">VER MAS</a> --->
+    </div>
+    <div class="card-footer text-muted">
+      Proyecto En Desarrollo
+    </div>
+  </div>
+</div>
+
+<div>
+  <h5 style="background-color: rgb(36, 36, 36); margin-bottom: 0px; margin-top: 50px; color: white; text-align: center;">LISTA DE PROYECTOS DESTACADOS RECIENTES</h5>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of ListProye">
+      <tr>
+        <th scope="row">{{item.Orden}}</th>
+        <td>{{item.Fecha}}</td>
+        <td>{{item.Titulo}}</td>
+        <td>{{item.Descripcion}}</td>
+      </tr>
+</table>
+
+
+
+<!--
 <div>
   <h5 style="background-color: rgb(36, 36, 36); margin-bottom: 0px; margin-top: 50px; color: white; text-align: center;">LISTA DE PROYECTOS DESTACADOS RECIENTES</h5>
 </div>
@@ -40,3 +132,5 @@
         <td>{{item.Descripcion}}</td>
       </tr>
 </table>
+-->
+</main>

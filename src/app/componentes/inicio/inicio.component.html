@@ -4,7 +4,7 @@
   <div
     class="img-fluid"
     style="
-      background-image: url('../../../assets/imagenes/Fondo2.jpg');
+      background-image: url('../../../assets/imagenes/FondoHeader.jpg');
       height: 595px; background-size: cover;">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 595px">
       <div class="d-flex justify-content-center align-items-center h-100">
@@ -19,22 +19,26 @@
   <!-- Background image -->
 </header>
 
-<!--
+
 <br>
-<div class="contenedor-texto" style="margin-bottom: 100px; margin-top: 100px;">
+
+<!--
+
+<div class="contenedor-texto" style="margin-top:100px ;">
   <h2 class="titulo"> Diego Diaz De Leon Rodriguez <br> es <span class="typed"></span></h2>
 </div>
+-->
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="../../../assets/Escribir.js"></script>
-  -->
 
 <br>
+
+<!--<canvas id="c"></canvas> !-->
 
 <main class="p-4 container">
 <div class="row g-5">
   <div class="col-md-8">
   <article class="blog-post">
+    
     <h2 class="blog-post-title mb-1">OBJETIVO</h2>
     <hr>
     <p>Lograr contribuir en la empresa o institución implementando 
@@ -57,7 +61,7 @@
         Capturista de Datos</p>
       </article>
   </div>
-
+  
   
   <div class="col-md-4">
     <div class="position-sticky" style="top: 2rem;">
@@ -90,7 +94,10 @@
     </div>
   </div>
 </div>
+
 </main>
+
+
 
 <div class="bg-dark">
   <h5 class="subtitulos">PROYECTOS MAS IMPORTANTES</h5>
@@ -105,7 +112,7 @@
   <div class="carousel-inner">
     
     <div class="carousel-item mask" >
-      <img src="../../../assets/imagenes/FONDO GRIS.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/imagenes/Img3.jpg" class="d-block w-100" alt="...">
       <div class="container">
         <div class="carousel-caption d-none d-md-block">
           <h1>DETECTOR DE OBJETOS</h1>
@@ -116,7 +123,7 @@
     </div>
 
     <div class="carousel-item">
-      <img src="../../../assets/imagenes/FONDO GRIS.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/imagenes/img2.jpg" class="d-block w-100" alt="...">
       <div class="container">
         <div class="carousel-caption d-none d-md-block">
           <h1>PROYECTO EQUINOTERAPIA</h1>
@@ -127,7 +134,7 @@
     </div>
 
     <div class="carousel-item active">
-      <img src="../../../assets/imagenes/FONDO GRIS.jpg" class="d-block w-100" alt="...">
+      <img src="../../../assets/imagenes/img1.jpg" class="d-block w-100" alt="...">
       <div class="container">
         <div class="carousel-caption d-none d-md-block">
           <h1>REDL</h1>
@@ -191,6 +198,54 @@
     </div>
 </div>
 </div>
+
+
+<main class="container">
+<div>
+  <h5 style="background-color: rgb(36, 36, 36); margin-bottom: 0px; margin-top: 50px; color: white; text-align: center;">LISTA DE MATERIAS QUE EH CURSADO</h5>
+</div>
+<div class="container">
+<table class="table">
+      <thead>
+           <tr>
+             <th scope="col">Materia</th>
+             <th scope="col">Semestre</th>
+             </tr>
+        </thead>
+        <tbody *ngFor="let item of productos">
+          <tr>
+            <th name="Materia" scope="row">{{item.Materia}}</th>
+            <td>{{item.Semestre}}</td>
+            <td>
+              <button class="btn btn-danger text-white" (click)="Eliminar(item.Materia)">Borrar
+                </button>
+            </td>
+          </tr>
+        </tbody>
+</table>
+</div>
+
+
+<div class="col">
+  <form [formGroup]="productForm">
+    <div class="input-group mb-3">
+      <div class="input-group-pretend">
+        <span class="input-group-text">Nueva Materia</span>
+      </div>
+        <input formControlName="Materia" type="text" class="form-control" placeholder="Materia">
+        <input formControlName="Semestre" type="text" class="form-control" placeholder="Semestre">
+    </div>
+    <button (click)="Agregar()" class="btn btn-dark mb-2">
+      agregar
+    </button>
+  </form>
+</div>
+</main>
+
+
+    <canvas id="c"></canvas>
+  
+ 
 
 
 
